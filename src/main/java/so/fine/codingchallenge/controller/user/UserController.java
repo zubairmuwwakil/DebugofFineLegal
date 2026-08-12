@@ -26,6 +26,7 @@ public class UserController {
 
     @GetMapping("/{id}/deals")
     public ResponseEntity<List<DealResponse>> getDealsOfUser(@PathVariable("id") Long id) {
+    	
         List<DealResponse> dealResponses = dealService.getDealsForUser(id);
         return ResponseEntity.ok(dealResponses);
     }
