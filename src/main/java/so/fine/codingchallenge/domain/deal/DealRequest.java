@@ -2,6 +2,7 @@ package so.fine.codingchallenge.domain.deal;
 
 import lombok.Data;
 
+import java.time.LocalDate;
 import java.util.List;
 
 @Data
